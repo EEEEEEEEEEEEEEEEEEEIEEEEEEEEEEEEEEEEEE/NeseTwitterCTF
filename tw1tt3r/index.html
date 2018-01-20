@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+  <style>
+    #center {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #img {
+      text-align: center;
+      width: 15%;
+      height: 15%;
+    }
+  </style>
+</head>
+
+<script src="js\formvalidation.js"></script>
+
+<p id="center" style="font-size:40px">
+  <img id="img" src="img\twitter.jpg">
+</P>
+<br>
+<p id="center" style="font-size:19px">
+  <i>Twitter Account Signup</i>
+</p>
+
+<form name="form" id="center" onsubmit="return validatesignup()" action="success\success.html">
+  <p>
+    <label>First name</label>
+    <br>
+    <input type="text" name="first_name" placeholder="Michael">
+  </p>
+  <p>
+    <label>Last name</label>
+    <br>
+    <input type="text" name="last_name" placeholder="Moore">
+  </p>
+  <p>
+    <label>Email</label>
+    <br>
+    <input type="email" name="email" placeholder="mmoore@gmail.com">
+  </p>
+  <p>
+    <label>Social Security Number</label>
+    <br>
+    <input type="text" name="ssn" placeholder="XXX-XX-XXXX">
+  </p>
+  <p>
+    <label>Phone number</label>
+    <br>
+    <input type="tel" name="phone" placeholder="(XXX)-XXX-XXXX">
+  </p>
+  <p>
+    <label>Password</label>
+    <br>
+    <input type="password" name="password" placeholder="fatguyamerican123">
+  </p>
+  <p>
+    <label>Country</label>
+    <br>
+    <select>
+      <option>ChooseCountry</option>
+      <option>China</option>
+      <option>India</option>
+      <option>United States</option>
+      <option>Indonesia</option>
+      <option>Brazil</option>
+      <option>Bangaladesh</option>
+      <option>Other</option>
+    </select>
+  </p>
+  <p>
+    <label>
+      <input name="tandc" type="checkbox"> I agree to the
+      <a href="terms\tandc.html">terms and conditions</a>
+    </label>
+  </p>
+  <p>
+    <button type="submit">Sign up</button>
+    <button type="reset">Reset form</button>
+  </p>
+</form>
+</html>
